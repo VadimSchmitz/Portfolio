@@ -1,10 +1,15 @@
 import React from 'react';
-import './App.scss';
+import Header from './Components/Header'
+import Content from './Components/Content'
+import Footer from './Components/Footer'
+
 
 function App() {
   return (
     <div>
-     <h1>test</h1>
+     <Header/>
+     <Content/>
+     <Footer/>
     </div>
   );
 }
