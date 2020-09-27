@@ -3,8 +3,14 @@ $primary-color: #1D3557;
 
 .header{
     background-color: $primary-color;
-    height: 500px;
+
 }
 
-
-
+.wave{
+    position: relative;
+    background-color: red;
+    width: 100%;
+    margin-bottom: -4px ;
+    background-image: url(../svg/ContentBackground.svg);
+    background-position-x: 50px;
+}
