@@ -1,16 +1,17 @@
 $primary-color: #1D3557;
 
 
-.header{
+.header-content{
     background-color: $primary-color;
 
 }
 
 .wave{
-    position: relative;
-    background-color: red;
-    width: 100%;
-    margin-bottom: -4px ;
-    background-image: url(../svg/ContentBackground.svg);
-    background-position-x: 50px;
+    width: 105%;
+    height: auto;
+    margin-top: -4px;
+}
+
+.banner-image{
+    width: 20%;
 }

@@ -7,6 +7,6 @@
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 0px;
-
-  background-image: url(../svg/ContentBackground.svg);
+  width: 100%;
+  min-width: fit-content;
 }
