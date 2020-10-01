@@ -1,9 +1,16 @@
 import React from 'react'
+import '../Styles/Footer.scss';
+import Wave from "../svg/FooterTop.svg"
+
+
 
 export default function Footer() {
     return (
-        <div>
-         <h1>footer</h1>
+        <div className="footer">
+            <img className="footer-top" src={Wave}></img>
+            <div className="footer-content">
+                <h1>yeet</h1>
+            </div>
         </div>
     )
 }
