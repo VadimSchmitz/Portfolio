@@ -13,10 +13,12 @@ export default function Header() {
           <div className="header-subtitle">
             Fullstack web developer and Student at HZ university Zeeland
           </div>
-          <div className="header-button">
-            <button>projects</button>
-          </div>
+    
+            <button className="button is-outlined">Projects</button>
+    
           <div className="banner-image">
+
+          <br></br>
             <img className="" src={Bannerimage}></img>
           </div>
         </div>
