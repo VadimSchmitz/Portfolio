@@ -1,7 +1,7 @@
 @import "./App.scss";
-@import "./Header.scss";
-@import "./Content.scss";
-
+@import "../Components/Header/Header.scss";
+@import "../Components/Content/Content.scss";
+@import "../Components/Footer/Footer.scss";
 @import "https://fonts.googleapis.com/css?family=Montserrat";
 
 body {
@@ -9,6 +9,9 @@ body {
   margin: 0px;
   width: 100%;
   min-width: fit-content;
-  background-image: url(../svg/ContentBackground.svg);
   overflow-x: hidden;
+}
+
+.app{
+  width: 100%;
 }

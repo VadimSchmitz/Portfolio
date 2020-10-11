@@ -1,6 +1,6 @@
 import React from 'react'
-import '../Styles/Footer.scss';
-import Wave from "../svg/FooterTop.svg"
+import './Footer.scss';
+import Wave from "../../svg/FooterTop.svg"
 
 
 
