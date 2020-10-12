@@ -1,12 +1,20 @@
 
 .about-me{
-    padding: 4%;
-    width: 5vw;
+ margin: 2vh;
+    
 }
 
-.about-me-subtitle{
-    width: 5vw;
-    word-break: break-all
+.about-me-title{
+    //40 px
+    font-size: 5vh;
+    margin: 1vh 0vh 2vh 0vh;
+}
+
+.about-me-subtitle, p   {
+    //16px
+    font-size: 2vh;
+    word-break: break-all;
+    margin: 1vh 0vh 2vh 0vh;
 }
 
 

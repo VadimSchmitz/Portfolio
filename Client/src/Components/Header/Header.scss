@@ -2,9 +2,10 @@ $background-color: #002855;
 $primairy-text-color:#EBFFFF;
 
 
+
 .header-content{
     display: grid;
-    padding: 2%;
+    padding: 2vh;
     grid-template-columns: (65% auto);
     grid-template-rows: (auto auto auto);
     grid-template-areas: 
@@ -22,7 +23,6 @@ $primairy-text-color:#EBFFFF;
     grid-area: header-title;
     font-weight: 800;
     font-size: 9vh;
-    margin: 2vh;
     color: $primairy-text-color;
 }
 
@@ -31,7 +31,7 @@ $primairy-text-color:#EBFFFF;
     font-weight: 700;
     font-size: 4.5vh;
     color: $primairy-text-color;
-    margin: 0vh 2vh 1vh 2vh
+    
 }
 
 .wave{
@@ -62,7 +62,7 @@ $primairy-text-color:#EBFFFF;
     padding:1.3vh 2vh;
     grid-area: header-button;
     max-width: 20vh;
-    margin: 3vh 2vh 1vh 2vh
+   
 }
 
 .button:hover {
