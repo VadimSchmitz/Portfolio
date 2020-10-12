@@ -3,7 +3,7 @@ import "./Content.scss";
 
 export default function Content() {
   return (
-    <div className="wrapper">
+    <div>
       <div className="about-me">
         <div className="about-me-title">
           <h1 className="about-me-title">About me</h1>

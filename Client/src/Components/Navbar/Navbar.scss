@@ -1,0 +1,72 @@
+.wrapper {
+  margin: 1vh 0vh 0vh 5vh;
+  position: absolute;
+}
+
+.r-link {
+  display: inline-flex;
+  text-align: start;
+}
+
+.r-link[href] {
+  color: #ebffff;
+  text-decoration: none;
+}
+
+.r-list {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.menu-link:focus {
+  outline: 2px solid;
+}
+
+.menu-list {
+  display: flex;
+}
+
+.menu-link {
+  padding: 1.5rem 2.1rem;
+  font-size: 2vh;
+  text-align: start;
+  font-weight: 700;
+}
+
+//underlined animation
+.text-underlined {
+  position: relative;
+  overflow: hidden;
+  will-change: color;
+  transition: color 0.25s ease-out;
+}
+
+.text-underlined::before,
+.text-underlined::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: var(--textUnderlinedLineColor, currentColor);
+  will-change: width;
+  transition: width 0.1s ease-out;
+  position: absolute;
+  bottom: 0;
+}
+
+.text-underlined::before {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.text-underlined::after {
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.text-underlined:hover::before,
+.text-underlined:hover::after {
+  width: 96%;
+  transition-duration: 0.2s;
+}
