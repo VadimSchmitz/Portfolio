@@ -3,13 +3,17 @@ $primairy-text-color:#EBFFFF;
 
 
 
+
 .header-content{
+    height: 75vh;
     display: grid;
-    padding: 2vh;
+    padding: 5vh;
     grid-template-columns: (65% auto);
-    grid-template-rows: (auto auto auto);
+    grid-template-rows: (auto 200px 100px auto);
+ 
     grid-template-areas: 
     "header-title banner-image"
+    "header-subtitle banner-image"
     "header-subtitle banner-image"
     "header-button banner-image"
     ;   
@@ -22,6 +26,7 @@ $primairy-text-color:#EBFFFF;
 
 .header-title{
     grid-area: header-title;
+    align-self: end;
     font-weight: 800;
     font-size: 9vh;
     color: $primairy-text-color;
