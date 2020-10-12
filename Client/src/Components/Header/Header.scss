@@ -12,11 +12,12 @@ $primairy-text-color:#EBFFFF;
     "header-title banner-image"
     "header-subtitle banner-image"
     "header-button banner-image"
-    ;
+    ;   
 }
 
 .header-content{
-    background-color: $background-color;
+    background: linear-gradient(0deg, rgb(36, 86, 204) 0%, rgba(0,38,107,1) 47%, rgba(0,40,85,1) 100%); 
+
 }
 
 .header-title{
@@ -62,6 +63,7 @@ $primairy-text-color:#EBFFFF;
     padding:1.3vh 2vh;
     grid-area: header-button;
     max-width: 20vh;
+    max-height: 8vh;
    
 }
 
@@ -108,3 +110,7 @@ $primairy-text-color:#EBFFFF;
         width: 100%;
     }
   }
+
+
+  
+

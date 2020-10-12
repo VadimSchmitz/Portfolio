@@ -2,6 +2,7 @@ import React from "react";
 import './Header.scss';
 import Bannerimage from "../../svg/Bannerimage.svg"
 import Wave from "../../svg/Wave.svg"
+import BannerBackground from "../../svg/BannerBackground.svg"
 
 export default function Header() {
   return (
