@@ -1,7 +1,8 @@
 .wrapper {
   position: fixed;
   width: 100%;
-  padding-bottom: 1vh ;
+  padding-top: 2vh;
+  padding-bottom: 2vh ;
   backdrop-filter:blur(4px) ;
 }
 
@@ -20,7 +21,7 @@
   list-style: none;
 }
 
-  .border ,.border:active{
+  .border {
   border: .4vh solid;
   border-radius: 0.4vh;
 }

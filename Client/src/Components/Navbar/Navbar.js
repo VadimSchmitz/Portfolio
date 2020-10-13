@@ -1,5 +1,6 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import "./Navbar.scss"
+import Scrollspy from 'react-scrollspy'
 
 export default function Navbar() {
     const [href, setHref] = useState('#home')
@@ -7,18 +8,21 @@ export default function Navbar() {
 
     return (
         <nav className="wrapper">
-            <ul className="menu-list r-list">
-                <li className="menu-group">
-                    <a href={href} onClick={()=>setHref('#home')} className={`menu-link r-link text-underline ${href === '#home' ? "border" : ""}`}
-                    >Home</a>
-                </li>
-                <li className="menu-group">
-                    <a href={href} onClick={()=>setHref('#about-me')} className={`menu-link r-link text-underline ${href === '#about-me' ? "border" : ""}`}>About me</a>
-                </li>
-                <li className="menu-group">
-                    <a href={href} onClick={()=>setHref('#projects')} className={`menu-link r-link text-underline ${href === '#projects' ? "border" : ""}`}>Projects</a>
-                </li>
-            </ul>
+        <ul className="menu-list r-list">
+                <Scrollspy className="r-list r-link" items={['home', 'about-me', 'projects']}  currentClassName="border text-underlined">
+                    <li className="menu-group">
+                        <a href="#home" className="menu-link r-link text-underlined" 
+                        >Home</a>
+                    </li>
+                    <li className="menu-group">
+                        <a href="#about-me" className="menu-link r-link text-underlined">About me</a>
+                    </li>
+                    <li className="menu-group">
+                    <a href="#projects" className="menu-link r-link text-underlined">Projects</a>
+                    </li>
+                </Scrollspy>
+                </ul>
+            
         </nav>
     )
 }
