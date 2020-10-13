@@ -8,7 +8,7 @@ import Navbar from "../Navbar/Navbar"
 export default function Header() {
   return (
     <div>
-      <Navbar/>
+      <Navbar />
       <section id="home" className="header">
         <div className="header-content">
           <div className="header-title">Hello, My name is jantje jansen.
@@ -17,7 +17,7 @@ export default function Header() {
             Fullstack web developer and Student at HZ university Zeeland
           </div>
           <img className="banner-image" src={Bannerimage} alt="banner"></img>
-          <button  className="button">Projects</button>
+          <a href="#projects" className="button">Projects</a>
         </div>
         <img className="wave" src={Wave} alt="wave"></img>
       </section>

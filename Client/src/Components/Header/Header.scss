@@ -52,7 +52,11 @@ $off-white:#EBFFFF;
 
 .button {
     grid-area: header-button;
+    display: flex;
+    align-items:center;
+    justify-content:center;
     background-color:transparent;
+    text-decoration: none;
     margin-top: 2vh;
     border:0.4vh solid $off-white;
     border-radius: 0.4vh;

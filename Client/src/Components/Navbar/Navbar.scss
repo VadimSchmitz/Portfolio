@@ -22,18 +22,20 @@
 }
 
   .border {
-  border: .4vh solid;
-  border-radius: 0.4vh;
+  outline: .4vh solid;
 }
-
-
 
 .menu-list {
   display: flex;
   margin: 1vh 0vh 0vh 5vh;
 }
 
+.menu-group{
+  margin-left: .7vh;
+}
+
 .menu-link {
+  
   padding: 0.5rem 2.1rem;
   font-size: 2vh;
   text-align: start;
