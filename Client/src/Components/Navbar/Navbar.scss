@@ -1,16 +1,16 @@
 .wrapper {
-  margin: 1vh 0vh 0vh 5vh;
-  position: absolute;
+  position: fixed;
+  width: 100%;
+  padding-bottom: 1vh ;
+  backdrop-filter:blur(4px) ;
 }
 
 .r-link {
   display: inline-flex;
   text-align: start;
-}
-
-.r-link[href] {
   color: #ebffff;
   text-decoration: none;
+
 }
 
 .r-list {
@@ -20,16 +20,20 @@
   list-style: none;
 }
 
-.menu-link:focus {
-  outline: 2px solid;
+  .border ,.border:active{
+  border: .4vh solid;
+  border-radius: 0.4vh;
 }
+
+
 
 .menu-list {
   display: flex;
+  margin: 1vh 0vh 0vh 5vh;
 }
 
 .menu-link {
-  padding: 1.5rem 2.1rem;
+  padding: 0.5rem 2.1rem;
   font-size: 2vh;
   text-align: start;
   font-weight: 700;
@@ -47,7 +51,7 @@
 .text-underlined::after {
   content: "";
   width: 0;
-  height: 3px;
+  height: .4vh;
   background-color: var(--textUnderlinedLineColor, currentColor);
   will-change: width;
   transition: width 0.1s ease-out;

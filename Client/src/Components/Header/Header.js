@@ -9,15 +9,15 @@ export default function Header() {
   return (
     <div>
       <Navbar/>
-      <section className="header">
+      <section id="home" className="header">
         <div className="header-content">
-          <div className="header-title">Hello, My name is Vadim Schmitz.
+          <div className="header-title">Hello, My name is jantje jansen.
           </div>
           <div className="header-subtitle">
             Fullstack web developer and Student at HZ university Zeeland
           </div>
           <img className="banner-image" src={Bannerimage} alt="banner"></img>
-          <button className="button">Projects</button>
+          <button  className="button">Projects</button>
         </div>
         <img className="wave" src={Wave} alt="wave"></img>
       </section>

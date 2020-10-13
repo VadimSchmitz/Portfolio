@@ -1,18 +1,22 @@
-import React from 'react'
+import React, {useState} from 'react'
 import "./Navbar.scss"
 
 export default function Navbar() {
+    const [href, setHref] = useState('#home')
+
+
     return (
-        <nav class="wrapper">
-            <ul class="menu-list r-list">
-                <li class="menu-group">
-                    <a href="#0" class="menu-link r-link text-underlined">Home</a>
+        <nav className="wrapper">
+            <ul className="menu-list r-list">
+                <li className="menu-group">
+                    <a href={href} onClick={()=>setHref('#home')} className={`menu-link r-link text-underline ${href === '#home' ? "border" : ""}`}
+                    >Home</a>
                 </li>
-                <li class="menu-group">
-                    <a href="#0" class="menu-link r-link text-underlined">About me</a>
+                <li className="menu-group">
+                    <a href={href} onClick={()=>setHref('#about-me')} className={`menu-link r-link text-underline ${href === '#about-me' ? "border" : ""}`}>About me</a>
                 </li>
-                <li class="menu-group">
-                    <a href="#0" class="menu-link r-link text-underlined">Projects</a>
+                <li className="menu-group">
+                    <a href={href} onClick={()=>setHref('#projects')} className={`menu-link r-link text-underline ${href === '#projects' ? "border" : ""}`}>Projects</a>
                 </li>
             </ul>
         </nav>
