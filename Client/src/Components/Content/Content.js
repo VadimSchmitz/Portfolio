@@ -4,9 +4,9 @@ import "./Content.scss";
 export default function Content() {
   return (
     
-    <div id="about-me">
-      <div  className="container off-white">
-        <div className="about-me-title " >
+    <div id="about-me" >
+      <div  className="container">
+        <div className="about-me-title" >
           <h1 className="about-me-title">About me</h1>
         </div>
         <div className="about-me-subtitle" >
